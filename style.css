@@ -4,7 +4,23 @@
     --third-color: #E8B583;
 }
 
+@font-face {
+    font-family: "Flame-Regular";
+    src: url(./fonts/Flame-Regular.woff);
+}
+
+@font-face {
+    font-family: "FlameSans-Regular";
+    src: url(./fonts/FlameSans-Regular.woff);
+}
+
+@font-face {
+    font-family: "Flame-Bold";
+    src: url(./fonts/Flame-Bold.woff);
+}
+
 body {
+    font-family: "Flame-Regular";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
