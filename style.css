@@ -2,6 +2,7 @@
     --first-color: #F98F03;
     --second-color: #E71C15;
     --third-color: #E8B583;
+    --fourth-color: #90050A;
 }
 
 @font-face {
@@ -19,21 +20,176 @@
     src: url(./fonts/Flame-Bold.woff);
 }
 
-body {
-    font-family: "Flame-Regular";
+* {
+    user-select: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+.burger-button {
+    color: var(--second-color);
+    width: 2rem;
+    height: 2rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: var(--first-color);
+    position: fixed;
+    width: 60%;
+}
+
+nav .burger-button {
+    display: none;
+}
+
+.hero {
+    background-color: var(--first-color);
+    padding: 2rem 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 4rem;
+}
+
+.hero .intro {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero .intro .hero-title {
+    color: var(--third-color);
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: 'Flame-Bold';
+}
+
+.hero .intro .hero-title h1:nth-child(2) {
+    color: var(--second-color);
+    padding-left: 2rem;
+}
+
+.hero .intro .hero-button button {
+    transition: 0.5s;
+    color: var(--third-color);
+    border: none;
+    background-color: var(--second-color);
+    font-weight: lighter;
+    border-radius: 50px;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: 'Flame-Regular';
+}
+
+.hero .intro .hero-button button:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.hero .hero-icon {
+    background-color: var(--second-color);
+    width: 40%;
+    padding: 1.5rem 0;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.hero .hero-icon .icon-title {
+    /* font-family: 'Flame-Bold'; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero-icon .icon-title h1:nth-child(3){
+    opacity: 0.8;
+}
+
+.hero .hero-icon .icon-title h1:nth-child(4){
+    opacity: 0.6;
+}
+
+.hero .hero-icon .icon-title h1:nth-child(5){
+    opacity: 0.5;
+}
+
+.hero .hero-icon .icon-title h1:nth-child(6){
+    opacity: 0.4;
+}
+
+.hero .hero-icon .icon-title {
+    font-size: 3.5rem;
+    color: var(--fourth-color);
+    font-family: 'Flame-Bold';
+}
+
+.hero .hero-icon .burger-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+
+/* Mobile */
 @media only screen and (max-width: 767px) {
 
+    /* Hero Section */
+
     nav {
-        background-color: var(--first-color);
+        padding: 2rem 2rem;
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
+        width: 100%;
     }
-    
+
+    nav .burger-button {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding-right: 0;
+    }
+
+    .hero .hero-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero .intro .hero-title {
+        color: var(--third-color);
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .hero .intro .hero-button button {
+        padding: 0.8rem 2rem;
+    }
+
+    .hero .hero-icon .icon-title {
+        font-size: 2.5rem;
+    }
+
   }
