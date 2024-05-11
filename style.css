@@ -106,12 +106,13 @@ nav .burger-button {
     width: 40%;
     padding: 1.5rem 0;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     height: 100vh;
 }
 
 .hero .hero-icon .icon-title {
     /* font-family: 'Flame-Bold'; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,6 +142,7 @@ nav .burger-button {
 }
 
 .hero .hero-icon .burger-icon {
+    height: 25rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -190,6 +192,10 @@ nav .burger-button {
 
     .hero .hero-icon .icon-title {
         font-size: 2.5rem;
+    }
+
+    .hero .hero-icon .burger-icon {
+        height: auto;
     }
 
   }
