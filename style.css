@@ -2,6 +2,7 @@
     --first-color: #F98F03;
     --second-color: #E71C15;
     --third-color: #E8B583;
+    --fourth-color: #90050A;
 }
 
 @font-face {
@@ -26,6 +27,71 @@ body {
     padding: 0;
 }
 
+
+/* Section: About Us Desktop View */
+.about-us_image img {
+    height: 600px;
+    width: 450px;
+}
+
+.about-us {
+    height: 100vh;
+    background-color: var(--second-color);
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    padding: 5rem;
+}
+
+.about-us_title {
+    color: var(--fourth-color);
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.about-us_subtitle {
+    color: var(--third-color);
+    font-family: "Flame-Bold";
+    font-size: 72px;
+    width: 600px;
+    margin: 0;
+}
+
+.about-us_description {
+    color: var(--third-color);
+    font-family: "FlameSans-Regular";
+    font-size: 16px;
+    width: 27rem;
+    margin: 1rem 0;
+}
+
+.careers, .learn-more {
+    font-family: "FlameSans-Regular";
+    padding: 10px 15px;
+    border-radius: 36px;
+    outline: none;
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+.careers {
+    background-color: var(--second-color);
+    border: 2px solid var(--third-color);
+}
+
+.learn-more {
+    background-color: var(--fourth-color);
+    border: 2px solid var(--fourth-color);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    padding-top: 15px;
+} 
+
+
 @media only screen and (max-width: 767px) {
 
     nav {
@@ -34,6 +100,18 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
+    }
+
+    /* Section: About Us Mobile View */
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 1rem;
+    }
+
+    .about-us_subtitle {
+        font-size: 3.5rem;
+        width: 500px;
     }
     
   }
