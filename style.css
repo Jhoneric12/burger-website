@@ -3,6 +3,7 @@
     --second-color: #E71C15;
     --third-color: #E8B583;
     --fourth-color: #90050A;
+    --fiftth-color: #61340B;
 }
 
 @font-face {
@@ -106,7 +107,7 @@ nav {
     transition: 1s;
     display: flex;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 1.5rem 4rem;
     background-color: var(--first-color);
     position: fixed;
     width: 60%;
@@ -143,6 +144,7 @@ nav .nav-links {
     align-items: center;
     gap: 2rem;
     padding-right: 4rem;
+    z-index: 0;
 }
 
 .hero .intro {
@@ -233,6 +235,71 @@ nav .nav-links {
     z-index: 1000;
 }
 
+.hero .contacts {
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -20%);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--fiftth-color);
+    border-radius: 13px;
+    padding: 1rem 3rem;
+    z-index: 1500;
+    opacity: 0.8;
+}
+
+.hero .contacts .social-links {
+    background-color: var(--third-color);
+    padding: 0.5rem 1rem;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero .contacts .social-links ion-icon {
+    color: var(--fiftth-color);
+}
+
+.hero .contacts .phone ion-icon {
+    font-size: 1.5rem;
+}
+
+.phone ion-icon, .phone h1 {
+    color: var(--fiftth-color);
+    font-family: 'Flamesans-Regular';
+}
+
+.phone h1 {
+    font-size: 0.875rem;
+}
+
+.hero .contacts .phone {
+    background-color: var(--third-color);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+}
+
+.hero .contacts .phone .phone-number {
+    font-size: 0.7rem;
+}
+
+.hero .contacts .description {
+    font-family: 'Flamesans-Regular';
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 13px;
+    color: var(--third-color);
+}
+
+
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
@@ -240,7 +307,7 @@ nav .nav-links {
     /* Hero Section */
 
     nav {
-        padding: 2rem 2rem;
+        padding: 1.5rem 2rem;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -267,10 +334,25 @@ nav .nav-links {
         height: auto;
     }
 
+    .hero .contacts {
+        position: fixed;
+        /* top: 80%; */
+        width: 90%;
+        justify-content: space-around;
+    }
+
     .hero .intro .hero-title {
         color: var(--third-color);
         font-weight: bold;
         font-size: 2.5rem;
+    }
+
+    .hero .contacts .phone h1 {
+        font-size: 0.625rem;
+    }
+
+    .hero .contacts .description {
+        display: none;
     }
 
     /* Section: About Us Mobile View */
