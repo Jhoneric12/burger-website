@@ -54,7 +54,7 @@
 .about-us_title {
     font-family: "Flame-Regular";
     color: var(--fourth-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
@@ -69,7 +69,8 @@
 .about-us_description {
     color: var(--third-color);
     font-family: "FlameSans-Regular";
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     width: 35rem;
     margin: 1rem 0;
 }
@@ -297,7 +298,7 @@ nav .nav-links {
     top: 85%;
     left: 50%;
     width: 60%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -10%);
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -355,7 +356,6 @@ nav .nav-links {
     border-radius: 13px;
     color: var(--third-color);
 }
-
 
 
 /* Mobile */
