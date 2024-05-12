@@ -297,10 +297,10 @@ nav .nav-links {
     position: fixed;
     top: 85%;
     left: 50%;
-    width: 60%;
+    width: 80%;
     transform: translate(-50%, -10%);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2rem;
     background-color: var(--fiftth-color);
     border-radius: 13px;
