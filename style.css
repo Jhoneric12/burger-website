@@ -21,6 +21,7 @@
 }
 
 * {
+    list-style-type: none;
     user-select: none;
     box-sizing: border-box;
     margin: 0;
@@ -38,16 +39,24 @@
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
     background-color: var(--first-color);
     position: fixed;
     width: 60%;
+    gap: 10rem;
 }
 
 nav .burger-button {
     display: none;
+}
+
+nav .nav-links {
+    font-family: 'Flamesans-Regular';
+    color: var(--fourth-color);
+    display: flex;
+    width: 100%;
+    gap: 4rem  ;
 }
 
 .hero {
@@ -93,7 +102,7 @@ nav .burger-button {
     text-align: center;
     padding: 1rem 2rem;
     font-size: 1rem;
-    font-family: 'Flame-Regular';
+    font-family: 'Flamesans-Regular';
 }
 
 .hero .intro .hero-button button:hover {
@@ -167,6 +176,10 @@ nav .burger-button {
 
     nav .burger-button {
         display: block;
+    }
+
+    nav .nav-links {
+        display: none;
     }
 
     .hero {
