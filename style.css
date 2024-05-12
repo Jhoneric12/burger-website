@@ -103,6 +103,7 @@
 /* Hero Section */
 
 nav {
+    transition: 1s;
     display: flex;
     align-items: center;
     padding: 2rem 4rem;
@@ -110,6 +111,14 @@ nav {
     position: fixed;
     width: 60%;
     gap: 10rem;
+}
+
+.scrolled {
+    transition: 0.5s;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
 }
 
 nav .burger-button {
