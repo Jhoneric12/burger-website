@@ -29,10 +29,10 @@
 }
 
 
-/* Section: About Us Desktop View */
-.about-us_image img {
-    height: 600px;
-    width: 450px;
+/* About Us */
+.about-us_icon img {
+    height: 37.5rem;
+    width: 28.125rem;
 }
 
 .about-us {
@@ -41,35 +41,43 @@
     display: flex;
     overflow: hidden;
     flex-direction: row;
-    padding: 5rem;
+    padding: 0 0 0 5rem;
+}
+
+.about-us_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-us_title {
+    font-family: "Flame-Regular";
     color: var(--fourth-color);
-    font-size: 26px;
+    font-size: 1.5rem;
     margin-bottom: 0;
 }
 
 .about-us_subtitle {
     color: var(--third-color);
     font-family: "Flame-Bold";
-    font-size: 72px;
-    width: 600px;
+    font-size: 4.5rem;
+    width: 37.5rem;
     margin: 0;
 }
 
 .about-us_description {
     color: var(--third-color);
     font-family: "FlameSans-Regular";
-    font-size: 16px;
-    width: 27rem;
+    font-size: 1.2rem;
+    width: 35rem;
     margin: 1rem 0;
 }
 
 .careers, .learn-more {
     font-family: "FlameSans-Regular";
-    padding: 10px 15px;
-    border-radius: 36px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
     outline: none;
     color: var(--third-color);
     cursor: pointer;
@@ -88,9 +96,58 @@
 .buttons {
     display: flex;
     justify-content: space-between;
-    width: 290px;
-    padding-top: 15px;
+    width: 25rem;
+    padding-top: 1rem;
 } 
+
+.about-us_icon {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.about-us .about-us_icon .icon-title {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Flame-Bold";
+    font-size: 3.5rem;
+    color: var(--fourth-color);
+    letter-spacing: 0.25rem;
+    line-height: 75px;
+}
+
+.about-us .about-us_icon .icon .crew-icon {
+    height: 40rem;
+    width: 28.125rem;
+    padding-top: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.about-us .about-us_icon .icon-title h1:nth-child(2){
+    opacity: 0.7;
+}
+
+.about-us .about-us_icon .icon-title h1:nth-child(3){
+    opacity: 0.4
+}
+
+.about-us .about-us_icon .icon-title h1:nth-child(4){
+    opacity: 0.1;
+}
 
 
 .burger-button {
@@ -273,18 +330,48 @@ nav .nav-links {
         font-size: 2.5rem;
     }
 
-    /* Section: About Us Mobile View */
+    /* About Us */
     .about-us {
+        height: auto;
         display: flex;
         flex-direction: column;
         padding: 5rem 1rem;
+    }
+
+    .about-us_content {
+        padding-left: 1.2rem;
     }
 
     .about-us_subtitle {
         font-size: 3.5rem;
         width: 500px;
     }
-    
+
+    .about-us_description {
+        font-size: 1rem;
+        width: 25rem;
+    }
+
+    .about-us_icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-us .about-us_icon .icon .crew-icon {
+        padding-top: 0.25rem;
+        height: 32rem;
+        width: 25rem;
+    }
+
+    .about-us .about-us_icon .icon-title {
+        display: flex;
+        align-items: center;
+        font-size: 2.7rem;
+        line-height: 3.1rem;
+    }
+
+
+    /* Hero Section */
     .hero .intro .hero-button button {
         padding: 0.8rem 2rem;
     }
