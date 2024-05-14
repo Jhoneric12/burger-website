@@ -12,3 +12,15 @@ window.addEventListener('scroll', function() {
         navBar.classList.remove('scrolled');
     }
 });
+
+// Open Navbar
+const OpenNavbar = () => {
+    const navbar = document.querySelector('.nav-links');
+    navbar.style.display = 'flex';
+}
+
+// Close Navbar
+const CloseNavbar = () => {
+    const navbar = document.querySelector('.nav-links');
+    navbar.style.display = 'none';
+}

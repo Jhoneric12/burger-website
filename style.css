@@ -192,6 +192,19 @@ nav .nav-links {
     gap: 4rem  ;
 }
 
+
+nav .nav-links li:nth-child(1) {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.close-button {
+    font-size: 1.5rem;
+}
+
+
 .hero {
     background-color: var(--first-color);
     padding: 2rem 0;
@@ -324,7 +337,7 @@ nav .nav-links {
 }
 
 .hero .contacts .phone ion-icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .phone ion-icon, .phone h1 {
@@ -377,7 +390,23 @@ nav .nav-links {
     }
 
     nav .nav-links {
+        transition: all 0.5s ease-in;
         display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        width: 60%;
+        background-color: var(--third-color);
+        height: 100vh;
+        z-index: 1900;
+        animation: openNavbar 0.5s ease-in-out;
+    }
+
+    nav .nav-links li:nth-child(1) {
+        display: flex;
     }
 
     .hero {
@@ -468,3 +497,13 @@ nav .nav-links {
         height: auto;
     }
   }
+
+
+@keyframes openNavbar {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
