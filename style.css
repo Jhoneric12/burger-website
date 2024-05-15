@@ -381,6 +381,223 @@ nav .nav-links li:nth-child(1) {
     color: var(--third-color);
 }
 
+/* Best Sellers */
+.best-sellers {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    font-family: "FlameSans-Regular";
+}
+
+.burger-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    height: 100%;
+    width: 33%;
+}
+
+.burger-1 .title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: row;
+    margin-top: 12rem;
+}
+
+.burger-1 .title .name {
+    font-family: "Flame-Regular";
+    font-size: 1.8rem;
+}
+
+.burger-1 .title .price {
+    border: 2px solid var(--fourth-color);
+    border-radius: 1rem;
+    padding: 0.15rem 0.75rem;
+}
+
+.burger-1 .description {
+    font-size: 1rem;
+    padding-top: 0.65rem;
+    line-height: 1.5rem;
+}
+
+.burger-1 .burger1-icon .bg-icon {
+    letter-spacing: 0.35rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.burger-1 .burger1-icon .bg-icon h1:nth-child(2) {
+    opacity: 0.7;
+}
+
+.burger-1 .burger1-icon .bg-icon h1:nth-child(3) {
+    opacity: 0.4;
+}
+
+.burger-1 .burger1-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Flame-Bold';
+    position: relative;
+    z-index: 0;
+}
+
+.burger-1 img {
+    height: 345px;
+    width: 345px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.burger-2 {
+    background-color: var(--third-color);
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    color: var(--second-color);
+    height: 100%;
+    width: 34%;
+}
+
+.burger-2 .title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: row;
+    margin-top: 12rem;
+}
+
+.burger-2 .title .name {
+    font-family: "Flame-Regular";
+    font-size: 1.8rem;
+}
+
+.burger-2 .title .price {
+    border: 2px solid var(--second-color);
+    border-radius: 1rem;
+    padding: 0.15rem 0.75rem;
+}
+
+.burger-2 .description {
+    font-size: 1rem;
+    padding-top: 0.65rem;
+    line-height: 1.5rem;
+}
+
+.burger-2 .burger2-icon .bg-icon {
+    letter-spacing: 0.35rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.burger-2 .burger2-icon .bg-icon h1:nth-child(2) {
+    opacity: 0.7;
+}
+
+.burger-2 .burger2-icon .bg-icon h1:nth-child(3) {
+    opacity: 0.4;
+}
+
+.burger-2 .burger2-icon { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Flame-Bold';
+    position: relative;
+    z-index: 0;
+}
+
+.burger-2 img {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.burger-3 {
+    background-color: var(--second-color);
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    color: var(--third-color);
+    height: 100%;
+    width: 33%;
+}
+
+.burger-3 .title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: row;
+    margin-top: 13rem;
+}
+
+.burger-3 .title .name {
+    font-family: "Flame-Regular";
+    font-size: 1.8rem;
+}
+
+.burger-3 .title .price {
+    border: 2px solid var(--third-color);
+    border-radius: 1rem;
+    padding: 0.15rem 0.75rem;
+}
+
+.burger-3 .description {
+    font-size: 1rem;
+    padding-top: 0.65rem;
+    line-height: 1.5rem;
+}
+
+.burger-3 .burger3-icon .bg-icon {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.burger-3 .burger3-icon .bg-icon h1:nth-child(2) {
+    opacity: 0.7;
+}
+
+.burger-3 .burger3-icon .bg-icon h1:nth-child(3) {
+    opacity: 0.4;
+}
+
+.burger-3 .burger3-icon { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.79rem;
+    font-family: 'Flame-Bold';
+    position: relative;
+    z-index: 0;
+}
+
+.burger-3 img {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
@@ -476,11 +693,14 @@ nav .nav-links li:nth-child(1) {
     }
 
     .careers, .learn-more {
-        padding: 0.7rem 1.75rem;
-        font-size: 0.85rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
     
     .buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
         width: 100%;
         white-space: nowrap;
         overflow: hidden;
@@ -520,6 +740,30 @@ nav .nav-links li:nth-child(1) {
     .hero .hero-icon .burger-icon {
         height: auto;
     }
+
+    /* Best Sellers */
+  .best-sellers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .burger-1 {
+    width: 100%;
+  }
+
+  .burger-2{
+    width: 100%;
+  }
+
+  .burger-2 img {
+    height: 270px;
+    width: 370px;
+  }
+
+  .burger-3 {
+    width: 100%;
+  }
   }
 
 
