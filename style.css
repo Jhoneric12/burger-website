@@ -658,22 +658,25 @@ nav .nav-links li:nth-child(1) {
 .cards-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
 }
 
 .card .card-description {
     background-color: var(--third-color);
-    font-family: 'Flame-Regular';
     color: var(--fourth-color);
     padding: 1.5rem;
 }
 
 .card-description h1 {
+    padding-bottom: 0.55rem;
+    font-family: 'Flame-Regular';
     font-size: 1.5rem;
 }
 
 .card-description p {
+    font-family: 'FlameSans-Regular';
     margin-top: auto;
     line-height: 1.5rem;
     font-size: 0.875rem;
@@ -825,6 +828,7 @@ nav .nav-links li:nth-child(1) {
 
     /* Best Sellers */
   .best-sellers {
+    height: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -846,14 +850,37 @@ nav .nav-links li:nth-child(1) {
   .burger-3 {
     width: 100%;
   }
+
+  /* Rewards */
   
   .cards-container {
+    gap: 0.85rem;
+    padding: 2rem;
     flex-direction: column;
     justify-content: center;
   }
 
+  .card .card-description h1 {
+    font-size: 1.5rem;
+  }
+
+  .card .card-description p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+
   .card {
     width: 100%;
+  }
+
+  .rewards {
+    height: auto;
+  }
+
+  .rewards-title p:nth-child(3) {
+    font-size: 0.75rem;
+    width: 80%;
+
   }
   }
 
