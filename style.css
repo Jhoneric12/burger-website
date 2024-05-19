@@ -682,7 +682,80 @@ nav .nav-links li:nth-child(1) {
     font-size: 0.875rem;
 }
 
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-family: "FlameSans-Regular";
+    background-color: var(--first-color);
+}
 
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    gap: 1.3rem;
+}
+
+.footer-tagline {
+    width: 60%;
+}
+
+.footer-tagline h1 {
+    font-family: "Flame-Bold";
+    color: var(--fourth-color);
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.footer-tagline p {
+    color: var(--fourth-color);
+    line-height: 1.5rem;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.footer-icons .scan-code {
+    padding: 1rem;
+}
+
+.footer-icons .scan-code img {
+    height: 11rem;
+    width: 11rem;
+}
+
+.footer-icons button {
+    background-color: #fff;
+    border: none;
+}
+
+.footer-icons .download-app img {
+    height: 5rem;
+    width: 15rem;
+}
+
+.footer-credits {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+    gap: 0.35rem;
+    font-size: 0.85rem;
+}
+
+.footer-credits a {
+    color: var(--third-color);
+}
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
