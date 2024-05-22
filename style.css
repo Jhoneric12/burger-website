@@ -720,10 +720,12 @@ nav .nav-links li:nth-child(1) {
     width: 40%;
     background-color: white;
     border-radius: 3rem;
+    justify-content: center;
+    padding: 0.75rem;
 }
 
 .footer-icons .scan-code {
-    padding: 1rem;
+    padding-right: 1rem;
 }
 
 .footer-icons .scan-code img {
@@ -731,14 +733,15 @@ nav .nav-links li:nth-child(1) {
     width: 11rem;
 }
 
-.footer-icons button {
-    background-color: #fff;
-    border: none;
-}
-
-.footer-icons .download-app img {
+.footer-icons .app img {
     height: 5rem;
     width: 15rem;
+}
+
+.footer-icons .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-credits {
@@ -954,6 +957,40 @@ nav .nav-links li:nth-child(1) {
     font-size: 0.75rem;
     width: 80%;
 
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-tagline h1 {
+    font-size: 2rem;
+  }
+
+  .footer-tagline p {
+    font-size: 0.75rem;
+  }
+
+  .footer-tagline {
+    width: 100%;
+  }
+
+  .footer-icons {
+    width: 100%;
+    border-radius: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-icons .scan-code img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .footer-icons .app img {
+    height: 3rem;
+    width: 7rem;
   }
   }
 
