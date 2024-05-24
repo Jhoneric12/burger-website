@@ -29,6 +29,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* About Us */
 .about-us_icon img {
@@ -318,7 +322,7 @@ nav .nav-links li:nth-child(1) {
 }
 
 .hero .contacts {
-    position: fixed;
+    position: absolute;
     top: 85%;
     left: 50%;
     width: 80%;
@@ -758,6 +762,30 @@ nav .nav-links li:nth-child(1) {
 
 .footer-credits a {
     color: var(--third-color);
+}
+
+/* Back To Top */
+.to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 1.4rem;
+    background-color: var(--fiftth-color);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    color: var(--third-color);
+    opacity: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.to-top.active {
+    bottom: 2rem;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 /* Mobile */
