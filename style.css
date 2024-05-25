@@ -782,6 +782,31 @@ nav .nav-links li:nth-child(1) {
     transition: all 0.4s;
 }
 
+.to-top:hover {
+    transform: scale(1.1);
+}
+
+.to-top:hover .hidden-text {
+    visibility: visible;
+}
+
+.arrow {
+    font-size: 1.4rem;
+}
+
+.hidden-text {
+    font-family: "Flame-Bold";
+    font-size: 0.68rem;
+    text-align: center;
+    padding: 0 1rem;
+    position: absolute;
+    top: 30%;
+    visibility: hidden;
+    background-color: var(--fiftth-color);
+    border-radius: 1rem;
+    width: 99%;
+}
+
 .to-top.active {
     bottom: 2rem;
     pointer-events: auto;
